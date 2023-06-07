@@ -28,13 +28,19 @@ Doing this project, you will...
 - A user should not be able to click on the Start Over button when the slide is the first one (because the button is disabled).
 - The application should be styled, but it can be very simple. You can use a library if you want to (lightweight ones like Bulma or Materialize are good options), but your focus should be on functionality.
 
-#### Here is an example of how a finished app should work.
+#### Here is an example of how a finished app should work
 
 ![](react-slides.gif)
 
 ## How to Start
 
-Create a React app using `create-react-app`. To install the files directly in this repo you can run `npx create-react-app .` (note that you may have to move or delete files in order to be able to run that). If you install the react app inside a subdirectory instead (using `npx create-react-app my-subdirectory-name`, e.g.), note that you will need to cd into that subdirectory in order to run commands with npm like `npm start` or `npm install`.
+We'll use [Vite](https://vitejs.dev/), a newer and faster alternative Create React App, to create a new React application. [What is Vite and why should you use it instead of CRA?](https://luketheweb.dev/blog/what-is-vite-and-why-should-you-use-it-instead-of-create-react-app) Glad you asked. The React documentation has [changed its recommendation to Vite instead of Create React App](https://github.com/reactjs/react.dev/pull/5487) for creating new applications. Although you will still see applications created with Create React App out there, it's good to be familiar with other tools and approaches.
+
+[The Vite documentation walks you through creating a React project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project). You'll run `npm create vite@latest` and follow the prompts (choose "React" as your framework; for variant, select "JavaScript"). You'll have a `src` folder like you are used to and can install dependencies with `npm` in exactly the same way. To run the server, you will need to run the command `npm run dev`. Note that `npm start` will not work by default with Vite.
+
+⚠️ Pay attention to directories here. Vite will ask you for the project name. If you want it to install the files inside the directory you are currently in, you can give it `.` as the name. If you give it some other name, Vite will create a subdirectory with that name, and install the files there. Either way is fine, just be aware of what you're doing.
+
+❗If you install the react app inside a subdirectory, note that you will need to `cd` into that subdirectory in order to run commands with npm like `npm start` or `npm install`.
 
 Once you have scaffolded the React app, you can approach developing the slideshow app in whatever way makes the most sense to you. Here is one way you could approach it.
 
