@@ -66,6 +66,7 @@ Once you have scaffolded the React app, you can approach developing the slidesho
 - Let the user choose which data they want to see on the page. For example, a user could choose to see the title, release date, and description, but not the Japanese title or the poster image.
 - Add a feature that allows a user to add a film to a list of favorites. The list of favorites should be shown on the page. The list of favorites should be saved in [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API) so that it persists when the page is refreshed. Take it further by allowing the user to remove a film from the list of favorites.
 - Improve the UX by adding animations to the slideshow. For example, you could add a fade-in effect when a new slide is shown, or a slide-in effect when a slide is removed from the page.
-
+- Allow the user to navigate using the keyboard. For example, the user could use the left and right arrow keys to go back and forth between slides.
+- Add a timer that automatically advances the slides after a certain amount of time. The user should be able to pause the timer, and the timer should be reset when the user clicks the Start Over button.
 
 _Data courtesy of [ghibliapi](https://github.com/janaipakos/ghibliapi)_
